@@ -219,7 +219,7 @@ duration:1
 <section id='second' className='box second w-full  overflow-hidden  relative h-screen items-end justify-center flex flex-col'>
 
 
-<div className='pr-[8%] mt-9'>
+<div className='pr-[8%] z-10 mt-9'>
 <h1 className='   xl:text-8xl md:text-3xl text-xl text-left font-bold  '>Comfortable<br></br> to use</h1>
     <p className=' xl:w-[450px] w-[250px] lg:text-xl my-6'>Engonomic reversible hammer drill design with optimal grip positions, light weight and insulated shock proof plastic body,
       easy to change bits
@@ -232,7 +232,7 @@ duration:1
 <section id='third' className='box1  w-full third overflow-hidden  relative h-screen  justify-center  flex flex-col'>
 
 
-<div className='pl-[8%]  mt-9'>
+<div className='pl-[8%] z-10 mt-9'>
 <h1 className='   xl:text-8xl md:text-3xl text-xl text-left font-bold  '>Wood <br></br>and metal</h1>
     <p className='  xl:w-[450px] w-[250px] lg:text-xl my-4'>Engonomic reversible hammer drill design with optimal grip positions, light weight and insulated shock proof plastic body,
       easy to change bits
@@ -247,7 +247,7 @@ duration:1
 <button className='bg-[#d1d1d1a8] px-6 py-3 text-black rounded-xl'>BACK TO TOP</button>
     </footer>
 
-    <div ref={containerRef} id="container " className=' fixed left-0 w-full overflow-hidden top-0 pointer-events-none'></div>
+    <div ref={containerRef} id="container " className=' z-20 fixed left-0 w-full overflow-hidden top-0 pointer-events-none'></div>
     </div>;
 
     <div id='colors' className='fixed opacity-0   flex-col gap-4  left-10 top-[50%] z-40 '>
