@@ -202,7 +202,7 @@ duration:1
     return () => {
       window.removeEventListener('resize', onWindowResize);
     };
-  }, []);
+  });
 
   return(
     <>
