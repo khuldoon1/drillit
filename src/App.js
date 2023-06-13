@@ -20,10 +20,10 @@ function App() {
 
   // Create camera
   const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-  camera.position.set(-14.81,14.94,8.14);
+
 
   // camera
- camera.position.target=(new THREE.Vector3(-14.43,9.789,10.99))
+
   cameraRef.current = camera;
 
   // Create renderer
@@ -168,10 +168,10 @@ duration:1
 
 }
 
-// const changeColor=(color)=>{
-// console.log(GLTF.current)
-
-// }
+const changeColor=(color)=>{
+// console.log()
+GLTF.current.scene.children[0].material.color=new THREE.Color(color)
+}
 
   useEffect(() => {
     // Append renderer to container
@@ -251,15 +251,15 @@ duration:1
     </div>;
 
     <div id='colors' className='fixed opacity-0   flex-col gap-4  left-10 top-[50%] z-40 '>
-      {/* <div onClick={()=>changeColor("red")} className='w-9 h-9 cursor-pointer  bg-red-700 rounded-full'>
+      <div onClick={()=>changeColor("red")} className='w-9 h-9 cursor-pointer  bg-red-700 rounded-full'>
 
       </div>
       <div onClick={()=>changeColor("#FFDB58")} className='w-9 h-9 cursor-pointer my-4 bg-yellow-500 rounded-full'>
 
 </div>
-<div onClick={()=>changeColor("gray")} className='w-9 h-9 cursor-pointer bg-gray-500 rounded-full'>
+<div onClick={()=>changeColor("blue")} className='w-9 h-9 cursor-pointer bg-blue-700 rounded-full'>
 
-</div> */}
+</div>
 <button onClick={()=>Resetcustomize()} className=' mt-3 px-6 py-2 bg-black text-white  rounded-full'>
 close
 </button>
